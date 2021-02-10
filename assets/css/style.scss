@@ -12,6 +12,9 @@ body{
 	input{
 		@include input
 	}
+	button{
+		@include button
+	}
 }
 .login-warpper{
 	@include whiteBlock;
@@ -20,6 +23,7 @@ body{
 	max-width: 500px;
 	margin: auto;
 	justify-content: center;
+	flex-direction: column;
 	form{
 		fieldset{
 			flex-direction: column;
@@ -34,6 +38,20 @@ body{
 					margin-bottom: 0;
 				}
 			}
+		}
+		button{
+			margin-top: 10px;
+			width: 100%;
+		}
+	}
+	.login-message-result{
+		height: 40px;
+		padding: 10px;
+		&.error{
+			color: red;
+		}
+		&.success{
+			color: green;
 		}
 	}
 }
