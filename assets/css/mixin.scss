@@ -1,13 +1,25 @@
 $maincolor : #3867c6;
 $secondcolor : aliceblue;
-
+//#2751a5
 @mixin input {
 	height: 40px;
 	padding: 5px;
 	border: 0;
 	border-bottom: 2px solid $maincolor;
+	transition: background 250ms;
 	&:hover{
 		background-color: $secondcolor;
+	}
+}
+
+@mixin button {
+	height: 40px;
+	border: 0;
+	background-color: $secondcolor;
+	cursor: pointer;
+	transition: opacity 250ms;
+	&:hover{
+		opacity: 0.8;
 	}
 }
 

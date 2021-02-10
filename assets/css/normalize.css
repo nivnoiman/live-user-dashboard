@@ -22,3 +22,17 @@ body {
 main {
   display: block;
 }
+/**
+ * Remove style from fieldset
+ */
+fieldset{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+/**
+ * Fix Padding act like margin
+ */
+*{
+	box-sizing: border-box;
+}
