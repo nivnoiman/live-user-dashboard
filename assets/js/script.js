@@ -1,1 +1,7 @@
-import { setCookie, getCookie, removeCookie } from './cookie.js';
+import handleLogin from './login.js';
+
+/**
+ * Invoke handle login
+ */
+handleLogin();
+

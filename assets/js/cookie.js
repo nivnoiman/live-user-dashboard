@@ -15,7 +15,7 @@ export const setCookie = (name, value, days) => {
 	document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }
 /**
- * Get exist cookie by name
+ * Retrieve exist cookie by name
  * @param string name - the unique name of the cookie
  * @return mixed (null|string) null if not exists or cookie data on success
  */
