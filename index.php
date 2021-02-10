@@ -13,10 +13,10 @@
 <body>
 	<header class='header-wrapper'>
 		<div class="inner-header">
-
+			<h1>Live Users Dashboard</h1>
 		</div>
 	</header>
-	<main role="main">
+	<main class="main-wrapper" role="main">
 		<?php
 			if( ! helper()->is_user_login() ){
 				include( VIEWPATH . 'login.php' );

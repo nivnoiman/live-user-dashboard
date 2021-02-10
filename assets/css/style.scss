@@ -6,8 +6,14 @@ body{
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
+	.header-wrapper{
+		text-align: center;
+	}
 	.footer-wrapper{
 		margin-top: auto;
+	}
+	.main-wrapper{
+		margin-top: 20px;
 	}
 	input{
 		@include input
