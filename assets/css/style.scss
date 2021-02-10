@@ -3,8 +3,37 @@
 @import 'mixin';
 
 body{
-
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	.footer-wrapper{
+		margin-top: auto;
+	}
+	input{
+		@include input
+	}
 }
-footer{
-	
+.login-warpper{
+	@include whiteBlock;
+	display: flex;
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+	justify-content: center;
+	form{
+		fieldset{
+			flex-direction: column;
+			> label{
+				display: flex;
+				align-items: center;
+				margin-bottom: 10px;
+				> span{
+					width: 100px;
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
 }
