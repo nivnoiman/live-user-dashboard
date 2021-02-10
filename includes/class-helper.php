@@ -32,6 +32,7 @@ class Helper {
 
 		return self::$instance;
 	}
+
 	/**
 	 * Retrieve exist cookie by name
 	 * @param string $name - the unique name of the cookie
@@ -40,9 +41,31 @@ class Helper {
 	private function get_cookie( $name ) {
 		return isset( $_COOKIE[ $name ] ) ? htmlspecialchars( $_COOKIE[ $name ] ) : '';
 	}
-
+	/**
+	 * Retrieve user login cookie
+	 * @return array id and token of the user
+	 */
+	public function get_user_cookie() {
+		return $this->get_cookie( 'user' );
+	}
+	/**
+	 * Check if user is loggedin
+	 * @return boolean true if user loggeding false if not
+	 */
 	public function is_user_login() {
-		return $this->get_cookie( 'user' ) ? true : false;
+		return $this->get_user_cookie() ? true : false;
+	}
+	/**
+	 * Retrieve current logedin user
+	 * @return array of user info
+	 */
+	public function get_current_user_info() {
+		$info = array();
+		if ( $this->get_user_cookie() ) {
+			$user_cookie  = $this->get_user_cookie();
+			$info['name'] = 'Test'; // dummy  text
+		}
+		return $info;
 	}
 }
 /**

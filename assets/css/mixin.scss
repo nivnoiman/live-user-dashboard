@@ -25,6 +25,12 @@ $secondcolor : aliceblue;
 
 @mixin whiteBlock{
 	position: relative;
+	display: flex;
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+	justify-content: center;
+	flex-direction: column;
 	padding: 20px;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.45);
 	border-radius: 4px;

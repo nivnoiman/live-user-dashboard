@@ -18,9 +18,11 @@
 	</header>
 	<main class="main-wrapper" role="main">
 		<?php
-			if( ! helper()->is_user_login() ){
-				include( VIEWPATH . 'login.php' );
-			}
+		if ( ! helper()->is_user_login() ) {
+			include( VIEWPATH . 'login.php' );
+		} else{
+			include( VIEWPATH . 'dashboard.php' );
+		}
 		?>
 	</main>
 	<footer class="footer-wrapper" role="contentinfo">

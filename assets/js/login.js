@@ -35,7 +35,16 @@ const handleLogin = () => {
 				if (validateEmail(email)) {
 					if (email === "test@test.com" && password === "123456789") {
 						showMessage('Please Wait...', 'success');
-						setCookie('user', '12345');
+						//@TODO fetch from server the data 
+						const currentDate = new Date();
+						setCookie('user', {
+							fullname: 'Test Test',
+							username: 'test',
+							logintime: currentDate.toLocaleString(),
+							updatetime: currentDate.toLocaleString(),
+							ip: '0.0.0.0',
+						});
+						window.location.reload();
 					} else {
 						showMessage('Ops.. Invalid email or/and password', 'error');
 					}

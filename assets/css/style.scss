@@ -23,14 +23,28 @@ body{
 		@include button
 	}
 }
+.dashboard-wrapper{
+	@include whiteBlock;
+	justify-content: flex-start;
+	min-height: 300px;
+	.welcome-message{
+		font-weight: bold;
+	}
+	.user-info{
+		margin-top: 10px;
+		> div{
+			margin: 5px 0;
+			span{
+				&:first-child{
+					display: inline-block;
+					width: 150px
+				}
+			}
+		}
+	}
+}
 .login-warpper{
 	@include whiteBlock;
-	display: flex;
-	width: 100%;
-	max-width: 500px;
-	margin: auto;
-	justify-content: center;
-	flex-direction: column;
 	form{
 		fieldset{
 			flex-direction: column;
