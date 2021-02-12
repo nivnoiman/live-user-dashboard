@@ -1,0 +1,24 @@
+{
+  "name": "live-users",
+  "version": "1.0.0",
+  "description": "A JavaScript application that shows current online users.",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nivnoiman/live-user-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nivnoiman/live-user-dashboard/issues"
+  },
+  "homepage": "https://github.com/nivnoiman/live-user-dashboard#readme"
+}
