@@ -9,9 +9,9 @@ email: test4@test.com | password: 123456789
 
 You can login to the system using those users (email and password).
 
-Front end - I created a factory function to create dom  elements using vanilla js for this project to show a different way to get the same outcome. Everything was built using vanilla js and moduls.
+Front end - I created a factory function to create dom  elements using vanilla js for this project to show a different way to get the same outcome. Everything was built using vanilla js and modules.
 
 Back end - Regarding the server side I built an Api and class to communicate with the file database (txt).
 Unfortunately, I didn't complete the unitest for this application.
 
-Unitest is something that's not used at my current job, therefor when I ran into a problem while builidg the unitest and saw that it will be time consumming to solve it, I decided to leave it like that.
+Unitest is something that's not used at my current job, therefore when I ran into a problem while building the unitest and saw that it would be time consuming to solve it, I decided to leave it like that.
