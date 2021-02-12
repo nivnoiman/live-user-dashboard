@@ -1,7 +1,7 @@
 import config from './config.js'
 import { setCookie } from './cookie.js';
-import { userLogin } from './apiHelper.js';
-import { validateEmail, vlidateRequiredFields } from './formHelper.js';
+import { userLogin } from './helpers/apiHelper.js';
+import { validateEmail, vlidateRequiredFields } from './helpers/formHelper.js';
 import DomElementFactory from './DomElementFactory.js';
 import { strings } from './strings.js';
 /**

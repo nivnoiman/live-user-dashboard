@@ -2,7 +2,7 @@ import config from './config.js';
 import { getCookie } from './cookie.js';
 import DomElementFactory from './DomElementFactory.js';
 import { strings } from './strings.js';
-import { handleRefreshOnlineUsers } from './apiHelper.js';
+import { handleRefreshOnlineUsers } from './helpers/apiHelper.js';
 import Popup from './popup.js';
 
 const Dashboard = () => {
