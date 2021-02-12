@@ -1,5 +1,6 @@
 $maincolor : #3867c6;
 $secondcolor : aliceblue;
+$popupOverlayBackground: rgba(0,0,0,0.5);
 //#2751a5
 @mixin input {
 	height: 40px;
@@ -27,11 +28,12 @@ $secondcolor : aliceblue;
 	position: relative;
 	display: flex;
 	width: 100%;
-	max-width: 500px;
+	max-width: 600px;
 	margin: auto;
 	justify-content: center;
 	flex-direction: column;
 	padding: 20px;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.45);
 	border-radius: 4px;
+	background-color: #fff;
 }
