@@ -1,13 +1,15 @@
 import config from './config.js';
-import {getCookie} from './cookie.js';
-import handleLogin from './login.js';
+import { getCookie } from './cookie.js';
+import Login from './login.js';
 import Dashboard from './dashboard.js';
 /**
- * Invoke handle login
+ * Invoke App
  */
-if( getCookie(config.user_cookie_name) ){
-	Dashboard();
-} else{
-	handleLogin();
-}
+window.addEventListener('load', () => {
+	if (getCookie(config.user_cookie_name)) {
+		Dashboard();
+	} else {
+		Login();
+	}
+});
 
